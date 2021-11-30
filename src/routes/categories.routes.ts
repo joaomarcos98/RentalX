@@ -1,9 +1,9 @@
 /**@name Dependecies */
 import { Router } from "express";
 /**@name Repository */
-import { CategoriesRepository } from "../repositories/categoriesRepository";
+import { CategoriesRepository } from "../modules/cars/repositories/CategoriesRepository";
 /**@name Service */
-import { CreateCategoryService } from "../services/CreateCategoryService";
+import { CreateCategoryService } from "../modules/cars/services/CreateCategoryService";
 
 const categoriesRoutes = Router();
 const categoriesRepository = new CategoriesRepository();
