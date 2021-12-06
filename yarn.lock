@@ -17,6 +17,13 @@
   dependencies:
     "@types/node" "*"
 
+"@types/csv-parse@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@types/csv-parse/-/csv-parse-1.2.2.tgz#713486235759d615dc8e6a6a979170ada76701d5"
+  integrity sha512-k33tLtRKTQxf7hQfMlkWoS2TQYsnpk1ibZN+rzbuCkeBs8m23nHTeDTF1wb/e7/MSLdtgCzqu3oM1I101kd6yw==
+  dependencies:
+    csv-parse "*"
+
 "@types/express-serve-static-core@^4.17.18":
   version "4.17.25"
   resolved "https://registry.yarnpkg.com/@types/express-serve-static-core/-/express-serve-static-core-4.17.25.tgz#e42f7046adc65ece2eb6059b77aecfbe9e9f82e0"
@@ -237,6 +244,11 @@ create-require@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/create-require/-/create-require-1.1.1.tgz#c1d7e8f1e5f6cfc9ff65f9cd352d37348756c333"
   integrity sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==
+
+csv-parse@*, csv-parse@^5.0.3:
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/csv-parse/-/csv-parse-5.0.3.tgz#eeb0b1ac8bf2970f703176c8f54d313325b6d2e8"
+  integrity sha512-86R0WU4aEEF/1fPZKxP3NmDAYC4Ce1t9iFgKPZogG5Lvk4m9WZQkCEsDANktG29jppejwclTtEOzubN2ieCJqw==
 
 debug@2.6.9:
   version "2.6.9"
