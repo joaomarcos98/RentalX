@@ -1,5 +1,5 @@
 /**@name Model */
-import { Category } from "../../model/Category";
+import { Category } from "../../entities/Category";
 /**@name Repository */
 import { ICategoriesRepository, ICreateCategoryDTO } from "../ICategoriesRepository";
 
