@@ -5,6 +5,8 @@ import swaggerUi from "swagger-ui-express";
 import { router } from "./routes";
 /** @name JSON */
 import swaggerFile from "./swagger.json";
+/** @name Database */
+import "./database";
 
 
 const app = express();
