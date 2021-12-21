@@ -1,5 +1,7 @@
+/**@name Dependecies */
 import { container } from "tsyringe";
 import { Request, Response } from "express";
+/**@name UseCase */
 import { CreateUserUseCase } from "./CreateUserUseCase";
 
 class CreateUserController {

@@ -1,4 +1,6 @@
+/**@name DTO */
 import { ICreateUserDTO } from "../dtos/ICreateUserDTO";
+/**@name Entity */
 import { User } from "../entities/User";
 
 interface IUsersRepository {
