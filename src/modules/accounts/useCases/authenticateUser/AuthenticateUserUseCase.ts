@@ -4,7 +4,6 @@ import { inject, injectable } from "tsyringe";
 
 import { IUsersRepository } from "../../repositories/IUserRepository";
 
-
 interface IRequest {
     email: string;
     password: string;
