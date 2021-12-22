@@ -3,6 +3,7 @@ import { compare } from "bcrypt";
 import { inject, injectable } from "tsyringe";
 
 import { IUsersRepository } from "../../repositories/IUserRepository";
+import { AppError } from "../../../../erros/AppError";
 
 interface IRequest {
     email: string;
@@ -29,13 +30,13 @@ class AuthenticateUserUseCase {
         const user = await this.usersRepository.findByEmail(email)
 
         if (!user) {
-            throw new Error("User or password invalid.")
+            throw new AppError("User or password invalid.")
         }
 
         const passworMatch = await compare(password, user.password);
 
         if (!passworMatch) {
-            throw new Error("User or password invalid.")
+            throw new AppError("User or password invalid.", )
         }
 
         const token = sign({}, "b839f46722441b0cbcfc5d69326b81c3", {
