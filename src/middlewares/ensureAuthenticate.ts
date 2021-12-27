@@ -28,6 +28,10 @@ export async function ensureAuthenticate(req: Request, res: Response, next: Next
             throw new AppError("User doesn't exists!", 401)
         }
 
+        req.user = {
+            id: user_id
+        }
+
         next()
     }
     catch {
