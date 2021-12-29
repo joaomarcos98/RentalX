@@ -19,6 +19,9 @@ class UpdateUserAvatarUseCase {
 
         user.avatar = avatarFile;
 
+        console.log(user);
+
+
         await this.usersRepository.create(user);
     }
 }
